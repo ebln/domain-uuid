@@ -2,6 +2,7 @@
 .php_cs*
 !.php_cs.dist
 /.idea/
+/.phpunit.result.cache
 /build/
 /composer.phar
 /coverage/
