@@ -12,7 +12,9 @@
         }
     ],
     "require": {
-        "php": "^7.2"
+        "php": "^7.2",
+        "jenssegers/optimus": "^1.1",
+        "ramsey/uuid": "^4.1"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.8",
@@ -28,12 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "brnc\\Boilerplate\\": "src/"
+            "brnc\\Uuid\\Domain\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "brnc\\Boilerplate\\": "tests/"
+            "brnc\\Uuid\\Domain\\": "tests/"
         }
     },
     "archive": {
@@ -47,6 +49,7 @@
     },
     "scripts": {
         "php-cs-fixer": "php-cs-fixer fix -v --config=.php_cs.dist --using-cache=no --dry-run",
+        "php-cs-fixer-apply": "php-cs-fixer fix -v --config=.php_cs.dist --using-cache=no",
         "phpunit": "phpunit --coverage-html coverage --coverage-text --colors=auto",
         "test": [
             "composer normalize --dry-run",
