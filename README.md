@@ -1,10 +1,10 @@
 Namespaced IDs via UUID
 =======================
 
-Created UUIDs resembling version 3 i.e. namespace-based using MD5-hashes
+Creates non-standard UUIDs – resembling namespace-based using MD5-hashes i.e. version 3
 
 Yet it encodes a domain ID (e.g. mapped tables or entities) and numeric IDs (e.g. database rows).
-Between domain and node there's space left for a timestamp or other extra information to enable monotonic sorting.
+Between domain ID and node ID there's space left for a timestamp or other extra information to enable monotonic sorting.
 
 This is meant to support the migraton of tables having classic autoincremented IDs towards a DB design were you'd have UUIDs as primary keys.
 
