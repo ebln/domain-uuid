@@ -10,10 +10,10 @@ use brnc\Uuid\Domain\Exception\NoDomainUuidException;
 /** @psalm-suppress PropertyNotSetInConstructor */
 class DomainUuid
 {
-    public const  TYPE_NEUTRAL   = 0;
-    public const  TYPE_SORTABLE  = 1;
-    public const  TYPE_TIMESTAMP = 2;
-    public const  TYPE_SHARDING  = 3;
+    public const TYPE_NEUTRAL   = 0;
+    public const TYPE_SORTABLE  = 1;
+    public const TYPE_TIMESTAMP = 2;
+    public const TYPE_SHARDING  = 3;
     private const OFFSET_EPOCH   = 1599000000;
 
     /** @var int 16 bit for the domain identifier (e.g. mapping to tables or entities) */
