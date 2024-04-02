@@ -25,7 +25,10 @@
         "vimeo/psalm": "^4.8"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        }
     },
     "autoload": {
         "psr-4": {
